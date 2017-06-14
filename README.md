@@ -126,3 +126,20 @@ driver:
 This will result in the `roles/sample-role/.kitchen.yml` config being merged
 into the `.kitchen.parent.yml` file, with the former overriding and properties
 that are specified in both.
+
+
+## Development
+
+If you'd like to contribute, feel free to open a PR.  To run the tests prior
+to submitting the PR, just clone the project and run the integration tests:
+
+```
+# Install deps
+bundle install
+
+# Run integration tests
+bundle exec kitchen-pc test
+```
+
+
+
