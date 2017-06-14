@@ -24,5 +24,12 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = ">= 2.3"
 
-  gem.add_dependency 'test-kitchen', '~> 1'
+  gem.add_dependency 'test-kitchen', '>= 1.0.0'
+
+  # General test/build gems
+  gem.add_development_dependency 'bundler'
+  gem.add_development_dependency 'rake'
+
+  # Integration testing gems
+  gem.add_development_dependency 'kitchen-inspec', '~> 0.14'
 end

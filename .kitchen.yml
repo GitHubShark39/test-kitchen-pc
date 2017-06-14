@@ -1,0 +1,6 @@
+---
+parent: ./.kitchen.parent.yml
+
+# Configure to run on the CI machine (e.g. - Travis CI)
+driver:
+  name: docker

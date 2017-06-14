@@ -1,0 +1,6 @@
+name "test_cookbook"
+maintainer "Maintainer"
+maintainer_email "Maintainer@example.com"
+license "MIT"
+description "Used for testing test-kitchen-pc"
+version "0.1.0"

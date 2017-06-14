@@ -1,0 +1,17 @@
+---
+driver:
+  name: SHOULD_BE_OVERRIDDEN
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+verifier:
+  name: inspec
+
+suites:
+  - name: default
+    run_list:
+      - recipe[test_cookbook::default]

@@ -39,7 +39,11 @@ module Kitchen
 
         # Cleanup the temp config files on exit
         at_exit do
-          File.unlink(*tmp_files)
+          begin
+            File.unlink(*tmp_files)
+          rescue
+            # ignore cleanup errors
+          end
         end
 
         # Finally delegate to super

@@ -1,0 +1,29 @@
+language: ruby
+
+rvm:
+  - 2.3.4
+
+env:
+  - global:
+    - machine_user=travis
+    - machine_pass=travis
+    - machine_port=22
+
+dist: precise
+sudo: required
+
+before_install:
+  - sudo usermod -p `openssl passwd -1 'travis'` travis
+  - gem --version
+
+bundler_args: --without guard integration
+
+script:
+  - bundle exec rake
+  - bundle install --with integration
+  - export KITCHEN_YAML=.kitchen.ci.yml
+  - bundle exec kitchen verify ubuntu
+
+branches:
+  only:
+  - master
