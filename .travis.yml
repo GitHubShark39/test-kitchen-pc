@@ -27,3 +27,12 @@ script:
 branches:
   only:
   - master
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: B50sWvo60Ok+dfOcg7RGdeD2Eg7qLRU7XiVr050WIAWdOVY5UTjaRfKAEpC6UYq9d88Ab4dE+7EwgoObwEpcfMw4Aukcu0vlsz6fvyVO7lRtIfnZ9h5hYY5b1Q1kV6IUkcr5dwYZmrZiX2lLg2FW7S/y5DkELFiZA5RA/wKworB/eGvXfR4R7LhRZQpUywJ5hAFO8TLmK/CJehhtmuwqqFvKErU2Uwmu8DcAjhLvaTbmbVpVWxWVRraf0Y3ecBqvck81irgZKD63HmT2bRtQJmA7wvxhl1KCE2pxSnxuyLRoAOklfeTOYnLGblAEYPas8DefLE2V34DRy3tg+iWXsHaFwylnRMjYD6oDaK8TWJfmkdkIyC5T0yi/+PRibbCm012eYYK1nEjOOKV3kQ48gmfJgeKRZHSel11Oosm4ws/4jxODrj4NM1AWKo7eT/gmtUUQ0gGZlSRrGCZQvzvlrJLBOSobuIhGeam5OWey7pCDeEmJRixplsat1t3KketDwnxaGu2oqkneaUxfZFivllAGxgih3Ct887vv9eH755FnJmQArDQorMrIEXKn3fg0AUoiCxJar9zJtmuwDkd03YHZaSdib8sDQutLTiMlcoRh08/QBKfuhdkqj/RToE7z8GINYrW3HrZUarBFSRB/6xRVDNa29lBaLEfEBjblKoc=
+  gem: test-kitchen-pc
+  on:
+    tags: true
+    repo: rusnyder/test-kitchen-pc
