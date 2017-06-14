@@ -19,10 +19,9 @@ before_install:
 bundler_args: --without guard integration
 
 script:
-  - bundle exec rake
   - bundle install --with integration
   - export KITCHEN_YAML=.kitchen.ci.yml
-  - bundle exec kitchen verify ubuntu
+  - bundle exec kitchen-pc verify ubuntu
 
 branches:
   only:
