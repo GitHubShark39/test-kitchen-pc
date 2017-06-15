@@ -25,8 +25,8 @@ script:
 
 branches:
   only:
-  - master
-  - /v\d+\.\d+[a-z]/
+    - master
+    - /v\d+\.\d+[a-z]/
 
 deploy:
   provider: rubygems
