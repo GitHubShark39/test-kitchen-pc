@@ -1,5 +1,8 @@
 # Test Kitchen Parent Child
 
+[![Gem Version](https://badge.fury.io/rb/test-kitchen-pc.svg)](http://badge.fury.io/rb/test-kitchen-pc)
+[![Build Status](https://travis-ci.org/rusnyder/test-kitchen-pc.svg?branch=master)](https://travis-ci.org/rusnyder/test-kitchen-pc)
+
 Test Kitchen Parent-Child is a thin wrapper around Test Kitchen that adds
 support for inheritance in the .kitchen.yml configuration files for multi-role
 projects.
