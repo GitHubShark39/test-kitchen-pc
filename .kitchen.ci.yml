@@ -1,5 +1,5 @@
 ---
-parent: ./.kitchen.parent.yml
+parent: test/.kitchen.parent.yml
 
 # Configure to run on the CI machine (e.g. - Travis CI)
 driver:

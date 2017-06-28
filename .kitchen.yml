@@ -1,6 +1,6 @@
 ---
-parent: ./.kitchen.parent.yml
+parent: test/.kitchen.parent.yml
 
-# Configure to run on the CI machine (e.g. - Travis CI)
+# Configure to run in Docker (e.g. - local testing)
 driver:
   name: docker
